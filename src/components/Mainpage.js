@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
-import back from '../images/bg.jpg';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import './Mainpage.css';
 import axios from "axios";
 import Button from 'react-bootstrap/Button';
-import Upper from './Upper';
+import Forecast from './Forecast';
 
 function Mainpage() {
   const [data, setData] = useState({})
+  
   const [location, setLocation] = useState('')
   const [iscityenter, setcityenter] = useState(false);
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=8044c4aa7ab13872f31a9b8d203363a4`;
 //  // <img src={back} className='bg'></img>
   
-
+  const navigate = useNavigate();
 const searchLocation = (event) => {
+  
   console.log(event.target.value);  //every character being inserted
   console.log(location);
   if (event.key === 'Enter') {
@@ -25,21 +27,23 @@ const searchLocation = (event) => {
     setLocation('');
   }
 }
+  const navigforec = ()=>  {
+    console.log("getiing clicked");
+    navigate("/forecaste");
+  }
     var iconcode= data.main ? data.weather[0].icon:null;
-var theicon = "http://openweathermap.org/img/w/"+iconcode+".png";
-// console.log(theicon);
+    var theicon = "http://openweathermap.org/img/w/"+iconcode+".png";
+
 return (
-    <div className='allSection'>
+    <div className='allSection' >
 
     <input
     value={location}  //final res of the user text
     onChange={event => setLocation(event.target.value)}
     onKeyPress={searchLocation}
-    placeholder='Enter Location'
+    placeholder='Enter CityName'
     type="text"
     className='searchbutton' />
-  
-
     <div className='topsection'>
     <div className='titl'>
         <p>{data.name}</p>
@@ -74,12 +78,12 @@ return (
     </div>
     {
       iscityenter ? 
-      <Button variant="primary" size="lg" disabled className='forecast'>
+      <Button variant="primary" size="lg" onClick={navigforec} className='forecast'>
       Forecast for {data.name}
     </Button> :null 
     }
-   
-    
+
+ 
     </div>
   )
 }
