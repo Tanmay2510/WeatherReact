@@ -7,8 +7,7 @@ import Lightning from './icons/Lightning'
 import "./Forecast.css";
 import { Draggable } from 'react-drag-reorder'
 import { motion } from 'framer-motion'
-import  {Grid , Box}  from '@mui/material/';
-import FormRow from '@mui/material/'
+
 function Forecast() {
   const [isOpen,setisopen] = useState(false);
   return (
@@ -24,13 +23,18 @@ function Forecast() {
     </div>  
     <hr></hr>
     <div className='forflex'>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card night" 
+    <motion.div transition={{layout : {duration:1,type:"spring"}}} 
+    layout onClick={() => setisopen(!isOpen)} className= "card night" 
     whileHover={{ scale: 1.1 }}
     >
-    <motion.h2 layout="size"> Jabalpur </motion.h2>
-    <motion.p layout = "size">26/12/2002 00:00:00</motion.p>
+    <motion.h2  layout="position"> Jabalpur </motion.h2>
+    <motion.p layout="position">26/12/2002 00:00:00</motion.p>
     {isOpen &&(
-    <motion.div>
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:1}}
+    >
     <p>the temp</p>
     <p>again temp</p>
     </motion.div>
