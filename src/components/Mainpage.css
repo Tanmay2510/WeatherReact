@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Indie+Flower&family=Lobster&family=Press+Start+2P&family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Indie+Flower&family=Joan&family=Lobster&family=Press+Start+2P&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Indie+Flower&family=Joan&family=Lobster&family=Oswald:wght@200&family=Press+Start+2P&family=Ubuntu:wght@300&display=swap');
 .topsection{
     position: relative;
     margin-bottom: 70px;
@@ -7,18 +8,44 @@
     font-family: 'Ubuntu', sans-serif;
 
 }
+.allSection{
+    color:azure;
+}
+.thepara{
+    justify-content: center;
+    margin-top: 20px;
+}
+.thepara h2{
+    text-align: center;
+    font-size: 70px;
+    margin-top:-10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+.thepara p{
+    color:#FFE6E6;
+    font-size: 20px;
+}
+.thepara hr{
+    width:50%;
+    margin-top: -40px;
+}
+
 .allSection .searchbutton{
     color:whitesmoke;
     width: 20%;
-    margin-left: 37%;
-    /* margin-top:-15px; */
+    margin-left: 38%;
+
+  
     border-radius: 30px;
     /* margin-top: auto; */
     height:35px;
+
     padding: .5rem 1.5rem;
     background: rgba(16,18,27,0.4);
     border: white;
 }
+
 ::placeholder{
     
     font-size: 17px ;
@@ -116,9 +143,10 @@ h1{
 }
 
 .forecast{
-    width:30%;
-    margin: 0 0 0 35%;
-    height:30px;
+    width:20%;
+    margin: 0 0 0 40%;
+    height:45px;
+    color:azure;
     border-radius: 35px;
     cursor: pointer;
     background: rgba(16,18,27,0.4);

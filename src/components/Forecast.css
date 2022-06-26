@@ -1,0 +1,9 @@
+.iconspace{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+hr{
+    transition: width 0.5s ease, margin-left 0.5s ease;
+}

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import './Mainpage.css';
 import axios from "axios";
-import Button from 'react-bootstrap/Button';
-import Forecast from './Forecast';
+import { motion } from "framer-motion";
+import SunIcon from './icons/Sunicon';
+import Thermometer from './icons/Thermometer';
+
 
 function Mainpage() {
   const [data, setData] = useState({})
@@ -11,7 +13,7 @@ function Mainpage() {
   const [location, setLocation] = useState('')
   const [iscityenter, setcityenter] = useState(false);
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=8044c4aa7ab13872f31a9b8d203363a4`;
-//  // <img src={back} className='bg'></img>
+
   
   const navigate = useNavigate();
 const searchLocation = (event) => {
@@ -36,14 +38,25 @@ const searchLocation = (event) => {
 
 return (
     <div className='allSection' >
-
+    {
+      iscityenter ? null : 
+        <div className='thepara'>
+        <SunIcon />
+     
+        <h2>Weather {<Thermometer/>} Forecast</h2>
+        <hr></hr>
+        <p>Get weather and 5 day forecast of your city </p>
+        </div>
+    }
     <input
     value={location}  //final res of the user text
     onChange={event => setLocation(event.target.value)}
     onKeyPress={searchLocation}
     placeholder='Enter CityName'
     type="text"
-    className='searchbutton' />
+    className='searchbutton'  
+  />
+
     <div className='topsection'>
     <div className='titl'>
         <p>{data.name}</p>
@@ -61,6 +74,9 @@ return (
     </div>
     </div>
     <div className='bottomsection'>
+    {
+      iscityenter ? 
+  
     <div className='morph'>
     <div className='windspeed'>
    {data.main ?  <p className='theP'>{data.wind.speed}m/s</p> : null } 
@@ -71,16 +87,36 @@ return (
     <p >Humid</p>
     </div>
     <div className='tempagain'>
+
     {data.main ?<p className='theP'> {data.main.feels_like}°C</p>: null} 
+    
     <p >Feels Like</p>
     </div>
     </div>
+    : null 
+  }
     </div>
     {
       iscityenter ? 
-      <Button variant="primary" size="lg" onClick={navigforec} className='forecast'>
+      <motion.button 
+      variant="primary" 
+      size="lg" 
+      onClick={navigforec} 
+      className='forecast'
+      whileHover={{
+        scale:1.1,
+      }}
+      drag
+      dragConstraints={{
+        top: -25,
+        left: -25,
+        right: 25,
+        bottom: 25,
+      }}
+      >
+     
       Forecast for {data.name}
-    </Button> :null 
+    </motion.button> :null 
     }
 
  
