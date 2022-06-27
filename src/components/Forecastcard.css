@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Dancing+Script&family=Indie+Flower&family=Joan&family=Lobster&family=Oswald:wght@200&family=Press+Start+2P&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Cormorant+Garamond&family=Dancing+Script&family=Indie+Flower&family=Joan&family=Lobster&family=Oswald:wght@200&family=Press+Start+2P&family=The+Nautigal:wght@700&family=Ubuntu:wght@300&display=swap');
+
+.card{
+    padding: 2rem 4rem 4rem 1rem;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+hr{
+    margin-bottom: 30px;
+}
+.night{
+    background-image: url("../images/night.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.warm{
+    background-image: url("../images/warm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+.every{
+    background-image: url("../images/every.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.eve{
+    background-image: url("../images/eve.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.card p{
+    padding-top: 1px;
+    line-height: 150%;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+.forflex{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    text-align: left;
+    margin-top: 50px;
+}
+.card h2{
+    margin-right: 10px;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+
+}

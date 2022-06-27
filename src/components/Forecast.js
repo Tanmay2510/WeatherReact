@@ -6,13 +6,27 @@ import Sun from './icons/Sun'
 import Lightning from './icons/Lightning'
 import "./Forecast.css";
 import { Draggable } from 'react-drag-reorder'
-import { motion } from 'framer-motion'
-
+import Forecastcards from './Forecastcards'
+import Particl from './Particl'
+import { CityName } from './Mainpage'
+import axios from "axios"
 function Forecast() {
-  const [isOpen,setisopen] = useState(false);
+console.log(CityName);
+const [thedata,setthedata] = useState({});
+   const forecaste = `https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&units=metric&cnt=18&appid=${process.env.REACT_APP_API_KEY}`;
+    console.log(forecaste);
+    axios.get(forecaste).then((response => {
+        setthedata(response.thedata)
+    }))
   return (
-    <div  >
-    <div className='iconspace'>
+    <div>
+    <Particl/>
+    <div className='esehi'>
+    <div  className='forebg' >
+   
+   
+    <div className='iconspace '>
+   
     <Draggable>
     <Lightning />
     <Sun /> 
@@ -21,167 +35,16 @@ function Forecast() {
     <Fog />
     </Draggable>
     </div>  
-    <hr></hr>
-    <div className='forflex'>
-    <motion.div transition={{layout : {duration:1,type:"spring"}}} 
-    layout onClick={() => setisopen(!isOpen)} className= "card night" 
-    whileHover={{ scale: 1.1 }}
-    >
-    <motion.h2  layout="position"> Jabalpur </motion.h2>
-    <motion.p layout="position">26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    transition={{duration:1}}
-    >
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
     
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card every" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2 > Jabalpur </motion.h2>
-    <motion.p  >26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card warm"
-    whileHover={{ scale: 1.1 }} >
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card eve" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    
-    </div>
-    <div className='forflex'>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card night" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card every"
-    whileHover={{ scale: 1.1 }} >
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card warm" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card eve" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    
-    </div>
-    <div className='forflex'>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card night"
-    whileHover={{ scale: 1.1 }} >
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card every"
-    whileHover={{ scale: 1.1 }} >
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card warm" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2> Jabalpur </motion.h2>
-    <motion.p>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    <motion.div layout onClick={() => setisopen(!isOpen)} className= "card eve" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2 layout> Jabalpur </motion.h2>
-    <motion.p layout>26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-    
+    <Forecastcards 
+ />
+    <Forecastcards />
+    <Forecastcards />
     </div>
     </div>
+
+    </div>
+
   )
 }
 
