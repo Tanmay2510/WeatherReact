@@ -9,29 +9,25 @@ import Thermometer from './icons/Thermometer';
 export var CityName = "";
 function Mainpage() {
   const [data, setData] = useState({})
-  
   const [location, setLocation] = useState('')
   const [iscityenter, setcityenter] = useState(false);
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
-  
-
-  
-  
   CityName = data.name;
   const navigate = useNavigate();
 const searchLocation = (event) => {
 
-  console.log(event.target.value);  //every character being inserted
-  console.log(location);
+  // console.log(event.target.value);  //every character being inserted
+  // console.log(location);
   if (event.key === 'Enter') {
     axios.get(url).then((response) => {
       setData(response.data);
-      console.log(response.data);
+      
       setcityenter(true);
     })
     setLocation('');
   }
 }
+
   const navigforec = ()=>  {
     console.log("getiing clicked");
     navigate("/forecaste");
