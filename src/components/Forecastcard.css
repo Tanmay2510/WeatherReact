@@ -13,28 +13,34 @@ hr{
 }
 .night{
     background-image: url("../images/night.jpg");
+    /* background-image: url("../images/warm.jpg"); */
+
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 .warm{
     background-image: url("../images/warm.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
 }
 .every{
     background-image: url("../images/every.jpg");
+    /* background-image: url("../images/warm.jpg"); */
+
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 .eve{
     background-image: url("../images/eve.jpg");
+    /* background-image: url("../images/warm.jpg"); */
+    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 .card p{
     padding-top: 1px;
@@ -47,7 +53,7 @@ hr{
 .forflex{
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     text-align: left;
     margin-top: 50px;
 }
@@ -57,3 +63,4 @@ hr{
     font-family: 'Dancing Script', cursive;
 
 }
+   

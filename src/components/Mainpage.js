@@ -5,6 +5,7 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import SunIcon from './icons/Sunicon';
 import Thermometer from './icons/Thermometer';
+import Particl from './Particl';
 
 export var CityName = "";
 function Mainpage() {
@@ -14,7 +15,8 @@ function Mainpage() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
   CityName = data.name;
   const navigate = useNavigate();
-const searchLocation = (event) => {
+const searchLocation =(event) => {
+  
 
   // console.log(event.target.value);  //every character being inserted
   // console.log(location);
@@ -34,8 +36,10 @@ const searchLocation = (event) => {
   }
     var iconcode= data.main ? data.weather[0].icon:null;
     var theicon = "http://openweathermap.org/img/w/"+iconcode+".png";
+  // <Particl/>
   
 return (
+  <div>
     <div className='allSection' >
     {
       iscityenter ? null : 
@@ -47,7 +51,9 @@ return (
         <p>Get weather and 3 day forecast of your city </p>
         </div>
     }
+  
     <input
+    defaultValue=""
     value={location}  //final res of the user text
     onChange={event => setLocation(event.target.value)}
     onKeyPress={searchLocation}
@@ -55,6 +61,7 @@ return (
     type="text"
     className='searchbutton'  
   />
+
 
     <div className='topsection'>
     <div className='titl'>
@@ -95,8 +102,12 @@ return (
     : null 
   }
     </div>
+    
     {
+    
       iscityenter ? 
+    
+
       <motion.button 
       variant="primary" 
       size="lg" 
@@ -115,9 +126,13 @@ return (
       >
      
       Forecast for {data.name}
-    </motion.button> :null 
+    </motion.button>
+    
+     :null 
+
     }
 
+    </div>
  
     </div>
   )

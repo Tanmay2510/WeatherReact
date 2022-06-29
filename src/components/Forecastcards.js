@@ -10,73 +10,26 @@ function Forecastcards(props) {
     <div>
     <div className='forflex'>
     <motion.div transition={{layout : {duration:1,type:"spring"}}} 
-    layout onClick={() => setisopen(!isOpen)} className= "card night" 
+    layout onClick={() => setisopen(!isOpen)} className= {props.clname} 
     whileHover={{ scale: 1.1 }}
     >
     <motion.h2  layout="position"> {CityName} </motion.h2>
-    <motion.p layout="position">26/12/2002 00:00:00</motion.p>
+    <motion.p layout="position">{props.dt}</motion.p>
     {isOpen &&(
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
     transition={{duration:1}}
     >
-    <p>{props.tempp} </p>
-    <p>{props.humm}</p>
+    <p>Temperature: {props.tempp}°C </p>
+    <p>Humidity: {props.humm}%</p>
+    <p>WindSpeed: {props.wss}m/s </p>
+    <img src = {props.ic}></img>
     </motion.div>
     )}
     
     </motion.div>
-    <motion.div  transition={{layout : {duration:1,type:"spring"}}} 
-    layout onClick={() => setisopen(!isOpen)} className= "card every"
-    whileHover={{ scale: 1.1 }} >
-    <motion.h2 layout="position "> {CityName} </motion.h2>
-    <motion.p layout="position">26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    transition={{duration:1}}>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-
-    <motion.div  transition={{layout : {duration:1,type:"spring"}}} 
-    layout onClick={() => setisopen(!isOpen)} className= "card warm" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2 layout="position"> {CityName} </motion.h2>
-    <motion.p layout="position">26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    transition={{duration:1}}>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
-
-    <motion.div  transition={{layout : {duration:1,type:"spring"}}} 
-    layout onClick={() => setisopen(!isOpen)} className= "card eve" 
-    whileHover={{ scale: 1.1 }}>
-    <motion.h2 layout="position"> {CityName} </motion.h2>
-    <motion.p layout="position">26/12/2002 00:00:00</motion.p>
-    {isOpen &&(
-    <motion.div
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    transition={{duration:1}}>
-    <p>the temp</p>
-    <p>again temp</p>
-    </motion.div>
-    )}
-    
-    </motion.div>
+   
     </div>
     </div>
   )

@@ -10,6 +10,10 @@
 }
 .allSection{
     color:azure;
+   
+        /* background-size: cover;
+        background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); */
+   
 }
 .thepara{
     justify-content: center;
@@ -37,9 +41,9 @@
     width: 20%;
     margin-left: 38%;
 
-  
+  z-index: 1;
     border-radius: 30px;
-    margin-top:-20px;
+    padding-top:-20px;
     height:35px;
 
     padding: .5rem 1.5rem;
@@ -54,6 +58,7 @@
 }
 .allSection{
     background-image: url('../images/g.jpg') ; 
+    z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -152,4 +157,5 @@ h1{
     cursor: pointer;
     background: rgba(16,18,27,0.4);
     border: whitesmoke;
+    z-index: 1;
 }
