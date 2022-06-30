@@ -11,6 +11,7 @@ import Particl from './Particl'
 import { CityName } from './Mainpage'
 import axios from "axios"
 import { Grid } from '@mui/material'
+import {motion} from 'framer-motion'
 function Forecast() {
 console.log(CityName);
 const [data,setdata] = useState({});
@@ -179,7 +180,8 @@ const [data,setdata] = useState({});
     ico: icon 
   }
   return (
-    <div>
+    <motion.div
+    exit={{ opacity: 0.1 }}>
     <Particl/>
     <div className='esehi'>
     <div  className='forebg' >
@@ -336,7 +338,7 @@ const [data,setdata] = useState({});
     </div>
     </div>
 
-    </div>
+    </motion.div>
 
   )
 }

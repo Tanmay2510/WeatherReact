@@ -6,14 +6,9 @@
     margin-bottom: 70px;
     font-weight: bolder;
     font-family: 'Ubuntu', sans-serif;
-
 }
 .allSection{
     color:azure;
-   
-        /* background-size: cover;
-        background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); */
-   
 }
 .thepara{
     justify-content: center;
@@ -40,37 +35,31 @@
     color:whitesmoke;
     width: 20%;
     margin-left: 38%;
-
-  z-index: 1;
+  /* z-index: 1; */
     border-radius: 30px;
     padding-top:-20px;
     height:35px;
-
     padding: .5rem 1.5rem;
     background: rgba(16,18,27,0.4);
     border: white;
 }
 
 ::placeholder{
-    
     font-size: 17px ;
     color:rgb(233, 216, 216);
 }
 .allSection{
-    background-image: url('../images/g.jpg') ; 
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
-    /* background: radial-gradient( #8f94fb ,#4e54c8);  */
     width:100%;
     height: 100vh;
+    background-image: linear-gradient(-45deg, #38ef7d,#11998e,#4568dc,#904e95,#FD746C  );
+    background-size: 400% 400% ;
+    position: relative;
+    animation:change 10s ease-in-out infinite;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin:auto; 
     padding-left: 30px;
- 
     box-sizing: border-box;
 }
 .weather{
@@ -96,8 +85,6 @@
     position: sticky;
 }
 p{
-
-    /* text-align: left; */
     margin:0;   
 }
 h1{
@@ -110,15 +97,12 @@ h1{
     justify-content: space-between;
     text-align: center;
     font-family: 'Arvo', serif;
-
-
 }
 .windspeed{
     font-size: 35px;
     margin-left: 40px;
     margin-top:10px;
-    margin-bottom: 10px;
-   
+    margin-bottom: 10px; 
 }
 .chipchip{
     font-size: 35px;
@@ -132,10 +116,7 @@ h1{
     margin-right: 40px;
 }
 .morph{
-    /* margin: 0 auto; */
     margin: 0 60px 0 0;
-    /* background: rgba(255,255,255,0.4);
-    border: 1px solid rgba( 255, 255, 255, 0.18 );  */
     background: rgba(16,18,27,0.4);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 10px;
@@ -147,7 +128,6 @@ h1{
     font-size: 2.3rem;
     margin-bottom: 3px;
 }
-
 .forecast{
     width:20%;
     margin: 0 0 0 40%;
@@ -158,4 +138,49 @@ h1{
     background: rgba(16,18,27,0.4);
     border: whitesmoke;
     z-index: 1;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+        
+    }
+}
+
+@media all and(max-width:500px) {
+    body{
+           background-size: cover;
+        background: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    }
+    .searchbutton{
+        width:5%;
+    }
+    .thepara{
+        font-size: 10px;
+    }
+    .topsection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .morph{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .theP{
+        font-size: 10px;
+    }
+    .windspeed .chipchip .tempagain{ 
+        font-size: 10px;
+      
+    }
+
+
 }

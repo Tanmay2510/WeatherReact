@@ -1,17 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {Routes, Route, useNavigate} from 'react-router-dom';
-import Mainpage from './components/Mainpage';
-import Forecast from './components/Forecast';
-import Particl from './components/Particl';
+
+import Animatedroutes from './components/Animatedroutes';
 
 function App() {
   return (
     <div className="App">
-    <Routes>
-    <Route exact path ="/" element={      <Mainpage/>   }>    </Route>
-    <Route exact path ="/forecaste" element={      <Forecast/>   }> </Route>
-         </Routes>
+
+    <Animatedroutes />
+ 
 
       </div>
   );

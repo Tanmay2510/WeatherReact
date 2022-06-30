@@ -5,8 +5,6 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import SunIcon from './icons/Sunicon';
 import Thermometer from './icons/Thermometer';
-import Particl from './Particl';
-
 export var CityName = "";
 function Mainpage() {
   const [data, setData] = useState({})
@@ -16,10 +14,7 @@ function Mainpage() {
   CityName = data.name;
   const navigate = useNavigate();
 const searchLocation =(event) => {
-  
 
-  // console.log(event.target.value);  //every character being inserted
-  // console.log(location);
   if (event.key === 'Enter') {
     axios.get(url).then((response) => {
       setData(response.data);
@@ -36,10 +31,11 @@ const searchLocation =(event) => {
   }
     var iconcode= data.main ? data.weather[0].icon:null;
     var theicon = "http://openweathermap.org/img/w/"+iconcode+".png";
-  // <Particl/>
   
 return (
-  <div>
+   <motion.div
+   exit={{ opacity: 0.1 }}
+>
     <div className='allSection' >
     {
       iscityenter ? null : 
@@ -51,6 +47,7 @@ return (
         <p>Get weather and 3 day forecast of your city </p>
         </div>
     }
+
   
     <input
     defaultValue=""
@@ -132,9 +129,10 @@ return (
 
     }
 
+
     </div>
  
-    </div>
+    </motion.div>
   )
 }
 
