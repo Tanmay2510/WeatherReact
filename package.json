@@ -2,8 +2,8 @@
   "name": "theweather",
   "version": "0.1.0",
   "engines" : { 
-    "npm" : ">=8.10.0",
-    "node" : ">=14.17.0"
+    "npm" : "8.10.0",
+    "node" : "14.17.0"
   },
   "private": true,
   "dependencies": {
