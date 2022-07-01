@@ -1,6 +1,10 @@
 {
   "name": "theweather",
   "version": "0.1.0",
+  "engines" : { 
+    "npm" : ">=8.10.0",
+    "node" : ">=14.17.0"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -50,10 +54,6 @@
   },
   "devDependencies": {
     "tsparticles": "^2.1.0"
-  },
-  "engines" : { 
-    "npm" : ">=8.10.0",
-    "node" : ">=14.17.0"
   }
 
 }
