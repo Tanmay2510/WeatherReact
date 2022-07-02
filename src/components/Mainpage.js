@@ -72,7 +72,7 @@ return (
     </div>
     <div className='icon'>
     { iscityenter ? 
-      <img src ={theicon} ></img> : null
+      <img src ={theicon} alt="the icon"></img> : null
     }
     </div>
     </div>

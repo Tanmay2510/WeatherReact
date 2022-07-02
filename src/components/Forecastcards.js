@@ -24,7 +24,7 @@ function Forecastcards(props) {
     <p>Temperature: {props.tempp}°C </p>
     <p>Humidity: {props.humm}%</p>
     <p>WindSpeed: {props.wss}m/s </p>
-    <img src = {props.ic}></img>
+    <img src = {props.ic} alt="an weather icon"></img>
     </motion.div>
     )}
     

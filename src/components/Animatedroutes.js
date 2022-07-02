@@ -11,7 +11,7 @@ function Animatedroutes() {
     <Route exact path ="/" element={      <Mainpage/>   }>    </Route>
     <Route exact path ="/forecaste" element={      <Forecast/>   }> </Route>
          </Routes>
-    </AnimatePresence >
+   </AnimatePresence>
 
   )
 }

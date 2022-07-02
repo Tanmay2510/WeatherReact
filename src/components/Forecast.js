@@ -22,6 +22,7 @@ const [data,setdata] = useState({});
     axios.get(forecaste).then((response) => {
         setdata(response.data)
           });
+          // eslint-disable-next-line react-hooks/exhaustive-deps
         },[])
     var today = new Date()   
     var ct =0;
@@ -31,7 +32,7 @@ const [data,setdata] = useState({});
       // console.log(apidate)
       var currdate = apidate ? apidate.substring(8,11) : null;
       // console.log(currdate)
-      if(currdate==today.getDate()){
+      if(currdate===today.getDate()){
         ct++;                  //3
       }
         i++;
