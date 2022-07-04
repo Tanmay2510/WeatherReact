@@ -24,31 +24,49 @@ const [data,setdata] = useState({});
           });
           // eslint-disable-next-line react-hooks/exhaustive-deps
         },[])
-    var today = new Date()   
+    var date = new Date()   
     var ct =0;
     var i =0;
     while(i<8){
       var apidate = data.list ? data.list[i].dt_txt : null ;
-      // console.log(apidate)
-      var currdate = apidate ? apidate.substring(8,11) : null;
-      // console.log(currdate)
-      if(currdate===today.getDate()){
-        ct++;                  //3
+      console.log(apidate)
+      var currtime = apidate ? apidate.substring(11,13) : null;
+      console.log(currtime)
+      if(currtime === "00"){
+        ct = 7;
+      }
+      if(currtime === "03"){
+        ct = 6;
+      }
+      if(currtime === "06"){
+        ct = 5;
+      }
+      if(currtime === "09"){
+        ct = 4;
+      }
+      if(currtime === "12"){
+        ct = 3;
+      }
+      if(currtime === "15"){
+        ct = 2;
+      }
+      if(currtime === "18"){
+        ct = 1;
+      }
+      if(currtime === "21"){
+        ct = 0;
       }
         i++;
     }
     console.log("ct" + ct)
     var x = 32 - ct;
     console.log(x);
-    // ct = ct +1 ;
+ 
     console.log(ct)
     var iconcode;
     var icon;
      iconcode = data.list ? data.list[ct].weather[0].icon : null ; 
-     icon = "http://openweathermap.org/img/w/"+iconcode+".png";
-
-
-      
+     icon = "http://openweathermap.org/img/w/"+iconcode+".png"; 
      var theelem ={
       dt: data.list ? data.list[ct].dt_txt : null ,
       tm:data.list ? data.list[ct].main.temp : null ,
@@ -71,7 +89,7 @@ const [data,setdata] = useState({});
       ico: icon 
     }
     iconcode = data.list ? data.list[ct+4].weather[0].icon : null ; 
-    console.log(iconcode);
+    
     icon = "http://openweathermap.org/img/w/"+iconcode+".png";
 
   var thethirelem={
