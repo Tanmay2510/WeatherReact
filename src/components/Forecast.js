@@ -24,7 +24,6 @@ const [data,setdata] = useState({});
           });
           // eslint-disable-next-line react-hooks/exhaustive-deps
         },[])
-    var date = new Date()   
     var ct =0;
     var i =0;
     while(i<8){
@@ -35,25 +34,25 @@ const [data,setdata] = useState({});
       if(currtime === "00"){
         ct = 7;
       }
-      if(currtime === "03"){
+      else if(currtime === "03"){
         ct = 6;
       }
-      if(currtime === "06"){
+      else if(currtime === "06"){
         ct = 5;
       }
-      if(currtime === "09"){
+      else if(currtime === "09"){
         ct = 4;
       }
-      if(currtime === "12"){
+      else if(currtime === "12"){
         ct = 3;
       }
-      if(currtime === "15"){
+      else if(currtime === "15"){
         ct = 2;
       }
-      if(currtime === "18"){
+      else if(currtime === "18"){
         ct = 1;
       }
-      if(currtime === "21"){
+      else if(currtime === "21"){
         ct = 0;
       }
         i++;
