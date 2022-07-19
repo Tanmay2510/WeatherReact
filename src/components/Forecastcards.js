@@ -9,7 +9,7 @@ function Forecastcards(props) {
   return (
     <div>
     <div className='forflex'>
-    <motion.div transition={{layout : {duration:1,type:"spring"}}} 
+    <motion.div transition={{layout : {duration:0.3,type:"spring"}}} 
     layout onClick={() => setisopen(!isOpen)} className= {props.clname} 
     whileHover={{ scale: 1.1 }}
     >
@@ -19,7 +19,7 @@ function Forecastcards(props) {
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{duration:1}}
+    transition={{duration:0.3}}
     >
     <p>Temperature: {props.tempp}°C </p>
     <p>Humidity: {props.humm}%</p>
