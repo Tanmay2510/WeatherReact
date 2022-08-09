@@ -20,6 +20,8 @@ const searchLocation =(event) => {
       setData(response.data);
       
       setcityenter(true);
+    }).catch(err=>{
+      navigate("/WHAT");
     })
     setLocation('');
   }

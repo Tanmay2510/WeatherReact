@@ -6,7 +6,18 @@
     background: rgba(151, 153, 160, 0.4); 
     backdrop-filter: blur(1px);
 }
+.iconsp{
+    
+    display: flex;
+    justify-content: space-evenly;
+    background: transparent; 
+    margin-top: -40px;
+    padding-bottom: 10px;
+    backdrop-filter: blur(1px);
+}
+
 .forebg{
+    z-index: 1;
     background-size: cover;
     background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
 }

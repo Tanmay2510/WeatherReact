@@ -5,6 +5,8 @@ import Fog from './icons/Fog'
 import Sun from './icons/Sun'
 import Lightning from './icons/Lightning'
 import "./Forecast.css";
+import ss  from "../images/season.png"
+
 import { Draggable } from 'react-drag-reorder'
 import Forecastcards from './Forecastcards'
 import Particl from './Particl'
@@ -12,12 +14,19 @@ import { CityName } from './Mainpage'
 import axios from "axios"
 import { Grid } from '@mui/material'
 import {motion} from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 function Forecast() {
-console.log(CityName);
+// console.log(CityName);
+const navigate = useNavigate();
 const [data,setdata] = useState({});
    const forecaste = `https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&units=metric&cnt=32&appid=${process.env.REACT_APP_API_KEY}`;
     console.log(forecaste);
-  
+    const [isActive, setIsActive] =useState(false);
+
+    const hand = ()=>{
+      setIsActive(!isActive);
+      navigate("/");
+    }
     useEffect(() => {
     axios.get(forecaste).then((response) => {
         setdata(response.data)
@@ -349,13 +358,20 @@ const [data,setdata] = useState({});
     />
         </Grid>
         </Grid>
-    
-  
-
+          
+    <div className='iconsp '>
    
+    <motion.div
+    className="mot"
+    onClick={hand}
+    animate={{
+      rotate: isActive ? 360 : 0
+    }}>
+    <img src={ss}  alt="backimg" style={{width:"15%"}}></img>
+    </motion.div>
+    </div> 
     </div>
     </div>
-
     </motion.div>
 
   )
