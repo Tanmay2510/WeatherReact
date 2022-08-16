@@ -13,7 +13,6 @@ hr{
 }
 .night{
     background-image: url("../images/night.jpg");
-    /* background-image: url("../images/warm.jpg"); */
 
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +27,6 @@ hr{
 }
 .every{
     background-image: url("../images/every.jpg");
-    /* background-image: url("../images/warm.jpg"); */
 
     background-position: center;
     background-repeat: no-repeat;
@@ -36,7 +34,6 @@ hr{
 }
 .eve{
     background-image: url("../images/eve.jpg");
-    /* background-image: url("../images/warm.jpg"); */
     
     background-position: center;
     background-repeat: no-repeat;

@@ -69,9 +69,7 @@ const [data,setdata] = useState({});
     console.log("ct" + ct)
     var x = 32 - ct;
     console.log(x);
- 
-    console.log(ct)
-    var iconcode;
+     var iconcode;
     var icon;
      iconcode = data.list ? data.list[ct].weather[0].icon : null ; 
      icon = "http://openweathermap.org/img/w/"+iconcode+".png"; 
@@ -84,7 +82,6 @@ const [data,setdata] = useState({});
     }
     console.log(ct);
 
-    //for 6
     iconcode = data.list ? data.list[ct+2].weather[0].icon : null ; 
     console.log(iconcode);
     icon = "http://openweathermap.org/img/w/"+iconcode+".png";
