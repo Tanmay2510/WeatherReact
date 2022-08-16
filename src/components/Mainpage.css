@@ -152,7 +152,7 @@ h1{
     }
 }
 
-@media all and(max-width:500px) {
+@media (max-width:500px) {
     body{
            background-size: cover;
         background: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
