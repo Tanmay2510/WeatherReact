@@ -23,7 +23,7 @@ function Notdate() {
 
     </motion.div>
     
-    <a href="/forecaste" className='lin'>Go Back</a>
+    <a href="/" className='lin'>Go Back</a>
     </div>
     </motion.div>
 
