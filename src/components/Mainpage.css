@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Indie+Flower&family=Joan&family=Lobster&family=Oswald:wght@200&family=Press+Start+2P&family=Ubuntu:wght@300&display=swap');
 .topsection{
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 5.124450951683748vw;
     font-weight: bolder;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -12,39 +12,39 @@
 }
 .thepara{
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 7.320644216691069vw;
     
 }
 .thepara h2{
     text-align: center;
-    font-size: 70px;
-    margin-top:-10px;
+    font-size: 5.124450951683748vw;
+    margin-top:-0.7320644216691069vw;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
 }
 .thepara p{
     color:#FFE6E6;
-    font-size: 20px;
+    font-size: 1.4641288433382138vw;
 }
 .thepara hr{
-    width:40%;
-    margin-top: -40px;
+    width:40vw;
+    margin-top: -2.9282576866764276vw;
 }
 
 .allSection .searchbutton{
     color:whitesmoke;
-    width: 20%;
-    margin-left: 38%;
-    border-radius: 30px;
-    padding-top:-20px;
-    height:35px;
+    width: 18vw;
+    margin-left: 37.5vw;
+    border-radius: 2.1961932650073206vw;
+    padding-top:-1.4641288433382138vw;
+    height:2.562225475841874vw;
     padding: .5rem 1.5rem;
     background: rgba(16,18,27,0.4);
     border: white;
 }
 
 ::placeholder{
-    font-size: 17px ;
+    font-size: 1.2445095168374818vw ;
     color:rgb(233, 216, 216);
 }
 .allSection{
@@ -58,28 +58,28 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin:auto; 
-    padding-left: 30px;
+    padding-left: 2.1961932650073206vw;
     box-sizing: border-box;
 }
 .weather{
     position:absolute;
-    right:2%;
+    right:2vw;
     transform:rotate(270deg);
     white-space: nowrap;
 }
 .icon{
-    width: 160px;
-    margin-top: -15px;
+    width: 11.71303074670571vw;
+    margin-top: -1.0980966325036603vw;
 }
 
 .titl{
     text-align: left;
-    padding-left: 5px;
-    font-size: 44px;
+    padding-left: 0.36603221083455345vw;
+    font-size: 3.22108345534407vw;
 }
 .weather{
-    font-size:30px;
-    margin-left:87% ;
+    font-size:2.1961932650073206vw;
+    margin-left:85vw ;
     text-transform: capitalize;
     position: sticky;
 }
@@ -98,41 +98,41 @@ h1{
     font-family: 'Arvo', serif;
 }
 .windspeed{
-    font-size: 35px;
-    margin-left: 40px;
-    margin-top:10px;
-    margin-bottom: 10px; 
+    font-size: 2.562225475841874vw;
+    margin-left: 2.9282576866764276vw;
+    margin-top:0.7320644216691069vw;
+    margin-bottom: 0.7320644216691069vw; 
 }
 .chipchip{
-    font-size: 35px;
-    margin-top:10px;
-    margin-bottom: 10px;
+    font-size: 2.562225475841874vw;
+    margin-top:0.7320644216691069vw;
+    margin-bottom: 0.7320644216691069vw;
 }
 .tempagain{
-    margin-top:10px;
-    margin-bottom: 10px;
-    font-size: 35px;
-    margin-right: 40px;
+    margin-top:0.7320644216691069vw;
+    margin-bottom: 0.7320644216691069vw;
+    font-size: 2.562225475841874vw;
+    margin-right: 2.9282576866764276vw;
 }
 .morph{
-    margin: 0 60px 0 0;
+    margin: 0 4.6vw 0 0;
     background: rgba(16,18,27,0.4);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 10px;
+    border-radius: 0.7320644216691069vw;
     backdrop-filter: blur(2px);
 }
 .theP{
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.3rem;
-    margin-bottom: 3px;
+    margin-bottom: 0.21961932650073207vw;
 }
 .forecast{
-    width:20%;
-    margin: 0 0 0 40%;
-    height:45px;
+    width:18vw;
+    margin: 0 0 0 39vw;
+    height:3.294289897510981vw;
     color:azure;
-    border-radius: 35px;
+    border-radius: 2.562225475841874vw;
     cursor: pointer;
     background: rgba(16,18,27,0.4);
     border: whitesmoke;
@@ -158,10 +158,10 @@ h1{
         background: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
     }
     .searchbutton{
-        width:5%;
+        width:5vw;
     }
     .thepara{
-        font-size: 10px;
+        font-size: 0.7320644216691069vw;
     }
     .topsection{
         display: flex;
@@ -169,15 +169,15 @@ h1{
         align-items: center;
     }
     .morph{
-        font-size: 10px;
+        font-size: 0.7320644216691069vw;
         display: flex;
         flex-direction: column;
     }
     .theP{
-        font-size: 10px;
+        font-size: 0.7320644216691069vw;
     }
     .windspeed .chipchip .tempagain{ 
-        font-size: 10px;
+        font-size: 0.7320644216691069vw;
       
     }
 

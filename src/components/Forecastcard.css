@@ -4,12 +4,12 @@
 .card{
     padding: 2rem 4rem 4rem 1rem;
     color: white;
-    border-radius: 20px;
+    border-radius: 1.4641288433382138vw;
     cursor: pointer;
     z-index: 1;
 }
 hr{
-    margin-bottom: 30px;
+    margin-bottom: 2.1961932650073206vw;
 }
 .night{
     background-image: url("../images/night.jpg");
@@ -40,23 +40,23 @@ hr{
     background-size: cover;
 }
 .card p{
-    padding-top: 1px;
-    line-height: 150%;
+    padding-top: 0.07320644216691069vw;
+    line-height: 2.5vw;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 900;
-    font-size: 21px;
+    font-size: 1.5373352855051245vw;
     
 }
 .forflex{
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 100px;
+    padding-bottom: 7.320644216691069vw;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 3.6603221083455346vw;
 }
 .card h2{
-    margin-right: 10px;
-    font-size: 40px;
+    margin-right: 0.7320644216691069vw;
+    font-size: 2.9282576866764276vw;
     font-family: 'Dancing Script', cursive;
 
 }

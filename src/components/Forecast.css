@@ -1,7 +1,7 @@
 .iconspace{
-    padding-top: 20px;
+    padding-top: 1.4641288433382138vw;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 1.4641288433382138vw;
     justify-content: space-evenly;
     background: rgba(151, 153, 160, 0.4); 
     backdrop-filter: blur(1px);
@@ -11,8 +11,8 @@
     display: flex;
     justify-content: space-evenly;
     background: transparent; 
-    margin-top: -40px;
-    padding-bottom: 10px;
+    margin-top: -2.9282576866764276vw;
+    padding-bottom: 0.7320644216691069vw;
     backdrop-filter: blur(1px);
 }
 
