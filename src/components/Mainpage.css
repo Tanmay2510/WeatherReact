@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Indie+Flower&family=Joan&family=Lobster&family=Oswald:wght@200&family=Press+Start+2P&family=Ubuntu:wght@300&display=swap');
 .topsection{
     position: relative;
-    margin-bottom: 5.124450951683748vw;
+    margin-bottom: 10vw;
     font-weight: bolder;
     font-family: 'Ubuntu', sans-serif;
 }
 .allSection{
     color:azure;
+
 }
 .thepara{
     justify-content: center;
@@ -60,7 +61,8 @@
 }
 .allSection{
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: linear-gradient(-45deg, #38ef7d,#11998e,#4568dc,#904e95,#FD746C  );
     background-size: 400% 400% ;
     position: relative;
@@ -149,6 +151,158 @@ h1{
     border: whitesmoke;
     z-index: 1;
 }
+@media all and (max-width:830px){
+    .forecast{
+        font-size: 1.5vw;
+        width: 22vw;
+    }
+}
+@media all and (max-width:730px){
+    .forecast{
+        font-size: 2vw;
+        width: 22vw;
+        height: 5vw;
+        margin-top: 2vw;
+    }
+    .searchbutton2::placeholder{
+        font-size: 2vw;
+        
+    }
+    .searchbutton2{
+        border-radius: 50px;
+    }
+}
+@media all and (max-width:650px){
+    .temperatur h1{
+        font-size: 10vw;
+    }
+    .weather p{
+        font-size: 3vw;
+    }
+    .searchbutton2::placeholder{
+        font-size: 1.8vw;
+    }
+    .forecast{
+        margin-bottom: 5vw;
+    }
+    
+}
+@media all and (max-width:550px){
+    .searchbutton2::placeholder{
+        font-size: 2.5vw;
+        
+    }
+    .searchbutton2{
+        border-radius: 50px;
+    }
+    .forecast{
+        height: 6.5vw;
+        font-size: 2.5vw;
+        width: 25vw;
+        border-radius: 50px;
+    }
+    .windspeed p{
+        font-size:3vw;
+    }
+    .chipchip p{
+        font-size:3vw;
+    }
+    .tempagain p{
+        font-size:3vw;
+    }
+   .bottomsection .morph{
+    align-items: center;
+   }
+    .morph{
+        height: 60px;
+    }
+}
+@media all and (max-width:500px){
+    .forecast{
+        font-size: 3vw;
+        width: 35vw;
+        height: 5vw;
+        margin-left: 30vw;
+    }
+    .searchbutton2::placeholder{
+        font-size: 3vw;
+    }
+    .searchbutton2{
+        width: 25vw;
+        margin-left: 30vw;
+
+        border-radius: 50px;
+    }
+}
+@media all and (max-width:450px){
+    .searchbutton2::placeholder{
+        font-size: 4vw;
+        
+    }
+    .forecast{
+        height: 9vw;
+        font-size: 4vw;
+        margin-top: -13vw;
+        margin-left: 32vw;
+
+        border-radius: 50px;
+        width: 40vw;
+    }
+    .searchbutton2{
+        border-radius: 50px;
+        height: 5vw;
+        width: 30vw;
+        margin-left: 32vw;
+    }
+}
+@media all and (max-width:400px){
+    .searchbutton2::placeholder{
+        font-size:6vw;
+        
+    }
+    
+    .forecast{
+        height: 9vw;
+        width: 45vw;
+        font-size: 4.5vw;
+        margin-left: 25vw;
+        margin-top: -10vw;
+    }
+    .titl p{
+        font-size:9vw ;
+        margin-bottom: 10px;
+    }
+    .temperatur h1{
+        font-size:13vw ;
+    }
+    .weather p{
+        font-size: 3.5vw;
+    }
+    .searchbutton2{
+        width: 25vw;
+        height: 5vw;
+        border-radius: 50px;
+        margin-left: 30vw;
+
+    }
+    .searchbutton2::placeholder{
+        font-size: 2.8vw;
+    }
+    .windspeed p{
+        font-size: 4vw;
+    }
+    .chipchip p{
+        font-size: 4vw;
+    }
+    .tempagain p{
+        font-size:4vw;
+    }
+}
+@media all and (max-width:300px){
+    .forecast{
+        margin-top: -18vw;
+    }
+}
 
 @keyframes change{
     0%{
@@ -162,44 +316,46 @@ h1{
         
     }
 }
-
-@media all and (max-width:650px){
+@media all and (max-width:850px){
     .thepara p{
         font-size: 2vw;
-        margin-top: 2vw;
-        margin-bottom: -5vw;
+        margin-bottom: 3vw;
     }
-    .thepara hr{
-        margin-top: -7vw;
-    }
+   
     .thepara h2{
         font-size: 10vw;
+    }
+}
+@media all and (max-width:650px){
+    .thepara p{
+        font-size: 2.5vw;
+    }
+  
+    .thepara h2{
+        font-size: 12vw;
+        margin-bottom: 5vw ;
     }
 }
 @media all and (max-width:500px){
     .thepara p{
         font-size: 3vw;
-        margin-top: 2vw;
-        margin-bottom: -8vw;
     }
-    .thepara hr{
-        margin-top: -7vw;
-    }
+   
     .thepara h2{
         font-size: 14vw;
+    }
+    .searchbutton1::placeholder{
+        font-size: 2vw;
+
     }
 
  
 }
 @media all and (max-width:345px){
     .thepara p{
-        font-size:3vw;
-        margin-top: 2vw;
-        margin-bottom: -18vw;
+        font-size:2.5vw;
     }
-    .thepara hr{
-        margin-top: -7vw;
-    }
+   
     .thepara h2{
         font-size: 10vw;
     }
