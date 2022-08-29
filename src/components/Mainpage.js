@@ -47,23 +47,39 @@ return (
         <h2>Weather {<Thermometer/>} Forecast</h2>
         <hr></hr>
         <p>Get weather and 3 day forecast of your city </p>
+        <input
+        defaultValue=""
+        value={location}  //final res of the user text
+        onChange={event => setLocation(event.target.value)}
+        onKeyPress={searchLocation}
+        placeholder='Enter CityName'
+        type="text"
+        className='searchbutton1'  
+      />
         </div>
+     
     }
 
   
-    <input
-    defaultValue=""
-    value={location}  //final res of the user text
-    onChange={event => setLocation(event.target.value)}
-    onKeyPress={searchLocation}
-    placeholder='Enter CityName'
-    type="text"
-    className='searchbutton'  
-  />
+  
 
 
     <div className='topsection'>
+   
     <div className='titl'>
+    {
+      iscityenter ?    <input
+      defaultValue=""
+      value={location}  //final res of the user text
+      onChange={event => setLocation(event.target.value)}
+      onKeyPress={searchLocation}
+      placeholder='Enter CityName'
+      type="text"
+      className='searchbutton2'  
+    /> : null
+   
+    }
+ 
         <p>{data.name}</p>
     </div>
     <div className='temperatur'>

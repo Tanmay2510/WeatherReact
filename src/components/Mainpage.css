@@ -31,12 +31,23 @@
     margin-top: -2.9282576866764276vw;
 }
 
-.allSection .searchbutton{
+.searchbutton2{
     color:whitesmoke;
     width: 18vw;
     margin-left: 37.5vw;
     border-radius: 2.1961932650073206vw;
     padding-top:-1.4641288433382138vw;
+    height:2.562225475841874vw;
+    padding: .5rem 1.5rem;
+    background: rgba(16,18,27,0.4);
+    border: white;
+}
+.searchbutton1{
+    color:whitesmoke;
+    width: 18vw;
+    margin-left: 2vw;
+    border-radius: 2.1961932650073206vw;
+    margin-top: 2vw;
     height:2.562225475841874vw;
     padding: .5rem 1.5rem;
     background: rgba(16,18,27,0.4);
@@ -152,34 +163,46 @@ h1{
     }
 }
 
-@media (max-width:500px) {
-    body{
-           background-size: cover;
-        background: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+@media all and (max-width:650px){
+    .thepara p{
+        font-size: 2vw;
+        margin-top: 2vw;
+        margin-bottom: -5vw;
     }
-    .searchbutton{
-        width:5vw;
+    .thepara hr{
+        margin-top: -7vw;
     }
-    .thepara{
-        font-size: 0.7320644216691069vw;
+    .thepara h2{
+        font-size: 10vw;
     }
-    .topsection{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+}
+@media all and (max-width:500px){
+    .thepara p{
+        font-size: 3vw;
+        margin-top: 2vw;
+        margin-bottom: -8vw;
     }
-    .morph{
-        font-size: 0.7320644216691069vw;
-        display: flex;
-        flex-direction: column;
+    .thepara hr{
+        margin-top: -7vw;
     }
-    .theP{
-        font-size: 0.7320644216691069vw;
-    }
-    .windspeed .chipchip .tempagain{ 
-        font-size: 0.7320644216691069vw;
-      
+    .thepara h2{
+        font-size: 14vw;
     }
 
+ 
+}
+@media all and (max-width:345px){
+    .thepara p{
+        font-size:3vw;
+        margin-top: 2vw;
+        margin-bottom: -18vw;
+    }
+    .thepara hr{
+        margin-top: -7vw;
+    }
+    .thepara h2{
+        font-size: 10vw;
+    }
 
+ 
 }
