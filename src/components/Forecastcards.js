@@ -27,6 +27,7 @@ function Forecastcards(props) {
     <img src = {props.ic} alt="an weather icon"></img>
     </motion.div>
     )}
+
     
     </motion.div>
    

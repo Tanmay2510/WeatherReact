@@ -6,6 +6,9 @@
     background: rgba(151, 153, 160, 0.4); 
     backdrop-filter: blur(1px);
 }
+.css-jnrtqm-MuiGrid-root{
+    justify-content: center;
+}
 .iconsp{
     
     display: flex;
@@ -19,6 +22,8 @@
 .forebg{
     z-index: 1;
     background-size: cover;
+    min-height: 100vh;
+    height: auto;
     background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
 }
 

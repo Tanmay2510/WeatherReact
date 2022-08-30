@@ -221,7 +221,7 @@ const [data,setdata] = useState({});
     <Fog />
     </Draggable>
     </div>  
-    <Grid container rowSpacing  = {2} spacing={{ xs: 2, md: 1}} columns={{ xs: 4, sm: 8, md: 12 }}>
+    <Grid container rowSpacing  = {2}  spacing={{ xs: 2, md: 1}} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid item xs={3}>
         <Forecastcards 
         dt = {theelem.dt}
@@ -366,8 +366,12 @@ const [data,setdata] = useState({});
     }}>
     <img src={ss}  alt="backimg" style={{width:"15%"}}></img>
     </motion.div>
+
     </div> 
+    <h4 style={{marginBottom:"auto"}}>Made with &#10084; by Tanmay Raikwar</h4>
+
     </div>
+
     </div>
     </motion.div>
 

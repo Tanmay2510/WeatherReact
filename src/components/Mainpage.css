@@ -142,7 +142,10 @@ h1{
 }
 .forecast{
     width:18vw;
-    margin: 0 0 0 39vw;
+    margin-left: 39vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    margin-right: 0;
     height:3.294289897510981vw;
     color:azure;
     border-radius: 2.562225475841874vw;
