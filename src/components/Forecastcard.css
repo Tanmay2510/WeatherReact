@@ -68,10 +68,16 @@ hr{
         font-size: 2.8vw;
         line-height: 5vw;
     }
+    .MuiGrid-container{
+        justify-content: center;
+    }
 }
 @media all and (max-width:600px){
     .forflex h2{
         font-size: 5vw;
+    }
+    .MuiGrid-container{
+        justify-content: center;
     }
     .forflex p{
         font-size: 4vw;
@@ -82,6 +88,9 @@ hr{
 @media all and (max-width:400px){
     .forflex h2{
         font-size: 6.5vw;
+    }
+    .MuiGrid-container{
+        justify-content: center;
     }
     .forflex p{
         font-size: 5.5vw;

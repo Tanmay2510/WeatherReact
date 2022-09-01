@@ -6,7 +6,7 @@
     background: rgba(151, 153, 160, 0.4); 
     backdrop-filter: blur(1px);
 }
-.css-jnrtqm-MuiGrid-root{
+.MuiGrid-container{
     justify-content: center;
 }
 .iconsp{
