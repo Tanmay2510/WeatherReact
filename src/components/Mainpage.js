@@ -147,7 +147,7 @@ return (
 
     }
 
-    <h4 style={{marginBottom:"1vw"}}>Made with &#10084; by Tanmay Raikwar</h4>
+    <h4 style={{marginBottom:"1vw"}}>Made with &#10084;</h4>
 
     </div>
     </motion.div>
