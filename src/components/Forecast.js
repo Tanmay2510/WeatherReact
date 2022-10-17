@@ -368,7 +368,7 @@ const [data,setdata] = useState({});
     </motion.div>
 
     </div> 
-    <h4 style={{marginBottom:"auto"}}>Made with &#10084;</h4>
+    <h4 style={{marginBottom:"auto"}}>Made with &#10084; Tanmay Raikwar</h4>
 
     </div>
 
